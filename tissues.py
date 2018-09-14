@@ -17,7 +17,6 @@ bot = telepot.Bot(config['token'])
 chat_id = config['chat_id']
 
 
-@app.route("/")
 @app.route("/request_tissue", methods=["GET", "POST"])
 def submit_tissue():
     if request.method == "POST":
